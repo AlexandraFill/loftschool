@@ -1,0 +1,374 @@
+body {
+    font: 16px/1.42 "roboto", Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul > li {
+  list-style: none;
+}
+
+.header {
+	background: #4b73b5;
+    color:#ffffff;
+    margin-bottom: 46px;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.header__container {
+  position: relative;
+  height: 77px;
+}
+
+.logo {
+    position:absolute;
+    top: 21px;
+    left: 21px;
+}
+
+.contacts{
+    position: absolute;
+    top: 14px;
+    right: 21px;
+    text-align: right;
+}
+
+.contacts__phone {
+    color: inherit;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.contacts__schedule:{
+    color: inherit;
+    opacity: .7;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.maincontent__container {
+    position: relative;
+    width: 1100px;
+}
+
+.page, .sidebar {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.page {
+  width: 900px;
+}
+
+.sidebar {
+    margin-left: 21px;
+    margin-right: 46px;
+
+}
+
+.menu__item {
+  margin-bottom: 15px;
+}
+
+.menu__text {
+  font-size: 12px;
+  letter-spacing: 2.4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #4b73b5;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.menu__text:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 18px;
+  background: no-repeat center center;
+  margin-right: 20px;
+}
+
+.menu__text:hover {
+  color: #000;
+}
+
+.menu__text--icon--main:before {
+  background-image: url('/img/icons/main_icon-hover.png'); 
+}
+
+.menu__text--icon--main:hover:before {
+  background-image: url('/img/icons/main_icon-hover.png'); 
+}
+
+.menu__text--icon--feed:hover:before {
+  background-image: url('/img/icons/feed_icon-hover.png'); 
+}
+
+.menu__text--icon--feed:before {
+  background-image: url('/img/icons/feed_icon.png'); 
+}
+
+.menu__text--icon--team:hover:before {
+  background-image: url('/img/icons/team_icon-hover.png'); 
+}
+
+.menu__text--icon--team:before {
+  background-image: url('/img/icons/team_icon.png'); 
+}
+
+.menu__text--active {
+  color: #000;
+}
+
+.menu__text--active.menu__text--icon--main:before {
+  background-image: url('/img/icons/main_icon-hover.png'); 
+}
+
+.page {
+  width: 900;
+}
+
+.information__preview-pic {
+  display: inline-block;
+  margin-right: - 35px;
+}
+
+
+.section__title {
+  font-family: Roboto;
+  font-size: 49px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #221f1f;
+  margin-bottom: 80px;
+}
+
+.tariffs {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.tariffs__item {
+  display: inline-block;
+  width: 250px;
+  height: 456px;
+  margin-left: 20px;
+  text-align:center; 
+  margin-bottom: 80px;
+}
+
+.tariffs__item:hover {
+  border-radius: 5px;
+  border: solid 1px #e8e9ed;
+}
+
+.tariffs__item-pic:{
+    width: 68px;
+    height: 68px;
+    margin-bottom: 20px;
+}
+
+.subsection__title {
+  padding-top: 20px;
+  font-size: 12px;
+  letter-spacing: 2.4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #212121;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.price {
+  font-family: Roboto;
+  font-size: 54px;
+  font-weight: lighter;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 3.21;
+  letter-spacing: -3.24px;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 60px;
+  padding: 0;
+  margin: 0;
+}
+
+small {
+    font-size: 38px;
+}
+
+.review {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  line-height: 1.87;
+  text-align: center;
+  color: #221f1f;
+}
+
+.review__list {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  list-style: circle; 
+  text-align: left;
+  line-height: 1.87;
+  color: #221f1f;
+  padding-left: 0px;
+  margin-top: -15px; 
+}
+
+.news__item-pic, .news__items-rev {
+  display: inline;
+  vertical-align: top;
+}
+
+
+.news__item-pic {
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.news__items-rev {
+    width: 644;
+    max-width: 100%;
+    text-align: left;
+    color: #212121;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.date {
+    display: block;
+}
+
+.review {
+    text-align: left;
+}
+
+.pagination {
+    width: 230px;
+    margin: 0 auto;
+}
+
+.pagination__display, .pagination__controlls {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pagination__display {
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  text-align: left;
+  color: #656464;
+  margin-right: 20px;
+}
+
+.pagination__controlls {
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  color: #221f1f;
+}
+
+.pagination__pages-item {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle; 
+}
+
+.pagination__next, .pagination__prev {
+    display: inline-block;
+    color: #221f1f;
+    width: 6px;
+    height: 10px;
+}
+
+.footer {
+	background: #4b73b5;
+    color:#ffffff;
+}
+  
+.footer__container {
+  position: relative;
+  height: 77px;
+  overflow: hidden;
+}
+
+.handmade {
+    color: inherit;
+    position: absolute;
+    top: 13;
+    left: 21px;
+    width: 270px;
+    height: 50px;
+    opacity: .7;
+    font-size: 14px;
+    text-align: left;
+}
+
+.a {
+    font-style: normal;
+    font-weight: bold;
+    color: inherit;
+}
+
+.logo-footer{
+    position: absolute;
+    top: 14px;
+    text-align: right;
+    font-style: normal;
+    margin-left: 490px;
+    margin-top: 8px;
+}
+
+.contacts__social {
+    position: absolute;
+    top: 14px;
+    right: 21px;
+    color: inherit;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.contacts__social-list: {
+    position: absolute;
+    right: 31px;
+    top: 14px;
+    display: inline-block;
+    color: white;
+}
+
