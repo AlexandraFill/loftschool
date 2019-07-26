@@ -20,6 +20,17 @@
 
 .member__avatar-text {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    opacity: 0;
+}
+
+.member__avatar-text:hover {
+    opacity: 1;
 }
 
 .members__list {
