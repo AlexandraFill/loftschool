@@ -1,0 +1,40 @@
+.main-intro {
+    background-image: url(../../../img/wing.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+  .button__text-intro {
+    color: #1c5bc3;
+    font-size: 12px;
+    letter-spacing: 2.4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .button__text-intro:hover {
+    color: white;
+  }
+  
+  .button__text-intro:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 18px;
+    background: no-repeat center center;
+    margin-left: 5px;
+    background-image: url('../../../img/icons/main_icon.png');
+  }
+  
+  .button__text-intro:hover:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 18px;
+    background: no-repeat center center;
+    margin-left: 5px;
+    background-image: url('../../../img/icons/main_icon-white.png');
+  }

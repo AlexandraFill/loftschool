@@ -1,0 +1,112 @@
+.tariffs__types {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tariffs__item {
+  width: calc(100% / 3 - 40px);
+  margin-left: 40px;
+  text-align:center; 
+  margin-bottom: 80px;
+  border-radius: 5px;
+  border: solid 1px transparent;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+.tariffs__item:first-child {
+    margin-left: 0;
+}
+
+.tariffs__item:hover {
+  border-radius: 5px;
+  border: solid 1px #e8e9ed;
+}
+
+.tariffs__item-pic {
+    width: 68px;
+    height: 68px;
+    margin-bottom: 20px;
+    background-color: #4b73b5;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.tariffs__item-img{
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+}
+
+.tariffs__item-img:hover {
+  opacity: 0;
+}
+
+.subsection__name {
+  padding-top: 20px;
+  font-size: 12px;
+  letter-spacing: 2.4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #212121;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.price {
+  font-family: Roboto;
+  font-size: 54px;
+  font-weight: lighter;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 60px;
+  padding: 0;
+  padding-right: 50px;
+  padding-top: 25px;
+  margin: 0;
+}
+
+small {
+    font-size: 30px;
+    padding: 7px;
+}
+
+.review {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  line-height: 1.87;
+  text-align: center;
+  color: #221f1f;
+}
+
+.review-list {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  list-style: circle; 
+  text-align: left;
+  line-height: 1.87;
+  color: #221f1f;
+  padding-left: 35px;
+  margin-top: -15px; 
+}
+
+.review-list__line{
+  list-style-type: disc;
+}

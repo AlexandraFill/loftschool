@@ -1,0 +1,27 @@
+.announcement {
+    background-color: #4bb56b;
+    color:#ffffff;
+    margin-bottom: 46px;
+    font-size: 18px;
+    font-weight: light;
+    line-height: 30px; 
+    width: 100%;
+}
+.announcement__container {
+    width: 630px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.booking {
+    font-weight: bold;
+    font-style: initial;
+    color: white;
+}
+
+.contacts__phone-ann {
+    font-size: 18px;
+}

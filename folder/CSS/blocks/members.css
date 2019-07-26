@@ -1,0 +1,57 @@
+.member__avatar {
+    max-width: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    background: #4b73b5;
+    opacity: 1;
+}
+
+.member__avatar-elem:hover {
+    opacity: .5;
+}
+
+.member__avatar-elem {
+    display: block;
+    max-width: 100%;
+    position: relative;
+}
+
+.member__avatar-text {
+    position: absolute;
+}
+
+.members__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.member {
+    text-align: center;
+    padding: 20px;
+}
+
+.members__item {
+    width: calc(100% / 3);
+}
+
+.member__name {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 2px;
+    letter-spacing: normal;
+    text-transform: none;
+}
+
+.member__occ {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4b73b5;
+    padding-bottom: 3px;
+}
+
+.member__text {
+    font-size: 14px;
+    font-weight: light;
+}

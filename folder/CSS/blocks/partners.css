@@ -1,0 +1,11 @@
+.partners {
+    margin-bottom: 30px;
+}
+
+.member__partner {
+    filter: grayscale(1);
+}
+
+.member__partner:hover {
+    filter: grayscale(0);
+}
