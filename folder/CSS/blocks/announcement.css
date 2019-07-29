@@ -1,5 +1,4 @@
 .announcement {
-    background-color: #4bb56b;
     color:#ffffff;
     margin-bottom: 46px;
     font-size: 18px;
@@ -8,12 +7,13 @@
     width: 100%;
 }
 .announcement__container {
-    width: 630px;
+    background-color: #4b73b5;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 20px;
+    margin-right: 20px;
 }
 
 .booking {

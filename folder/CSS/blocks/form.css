@@ -40,8 +40,6 @@
   border-radius: 5px;
   outline: none;
   border: 1px solid transparent;
-  border-right: 0px;
-  border-left: 0px;
 }
   
 .form__input:focus {

@@ -1,24 +1,29 @@
+.section__title-min {
+  padding-top: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #212121;
+  text-decoration: none;
+}
+
 .tariffs__types {
   display: flex;
   flex-wrap: wrap;
 }
 
-.tariffs__item {
-  width: calc(100% / 3 - 40px);
-  margin-left: 40px;
+.tariffs__item, .aside__item {
+  max-width: 100%;
   text-align:center; 
-  margin-bottom: 80px;
+  margin-bottom: 15px;
   border-radius: 5px;
   border: solid 1px transparent;
-  padding-top: 40px;
+  padding-top: 15px;
+  padding-bottom: 20px;
   box-sizing: border-box;
 }
 
-.tariffs__item:first-child {
-    margin-left: 0;
-}
 
-.tariffs__item:hover {
+.tariffs__item:hover,.aside__item:hover {
   border-radius: 5px;
   border: solid 1px #e8e9ed;
 }
@@ -67,10 +72,9 @@
   letter-spacing: normal;
   text-align: center;
   color: #212121;
-  margin-bottom: 60px;
-  padding: 0;
+  padding-bottom: 30;
   padding-right: 50px;
-  padding-top: 25px;
+  padding-top: 15px;
   margin: 0;
 }
 
@@ -109,4 +113,5 @@ small {
 
 .review-list__line{
   list-style-type: disc;
+  margin-left: 32px;
 }

@@ -1,11 +1,20 @@
 .partners {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-.member__partner {
+.partners__list {
+    direction: column;
+}
+
+.partners__item {
+    justify-content: center;
+    padding-top: 45px;
+}
+
+.partner {
     filter: grayscale(1);
 }
 
-.member__partner:hover {
+.partner:hover {
     filter: grayscale(0);
 }

@@ -38,6 +38,7 @@
     color: #221f1f;
     width: 25px;
     height: 25px;
+    padding-top: 3px;
 }
 
 .pagination__pages-link, .pagination__pages-link--active {

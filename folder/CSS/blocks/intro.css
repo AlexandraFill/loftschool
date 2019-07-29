@@ -1,40 +1,92 @@
-.main-intro {
-    background-image: url(../../../img/wing.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
+.wrapper-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../../../img/wing.png) center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-  .button__text-intro {
-    color: #1c5bc3;
-    font-size: 12px;
-    letter-spacing: 2.4px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
+
+.auth__content {
+  display: flex;
+  flex-direction: column;
+  animation: balllike 1s 1s cubic-bezier(.3,.96,.56,.81);
+  align-items: center;
+  justify-content: center;
+}
+
+.auth__logo {
+  margin-bottom: 40px;
+  display: block;
+  max-width: 100%;
+  width: 115px;
+}
+
+.welcome__btn {
+  border: 1px solid #1c5bc3;
+  border-radius: 5px;
+  padding: 14px 16px;
+}
+
+.welcome__btn:hover {
+  background-color: #1c5bc3;
+}
+
+.auth__welcome {
+  color: #1c5bc3;
+  font-size: 12px;
+  letter-spacing: 2.4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+.auth__welcome:hover {
+  color: white;
+}
+
+.auth__welcome:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 18px;
+  background: no-repeat center center;
+  margin-left: 5px;
+  background-image: url('../../../img/icons/main_icon.png');
+}
+
+.auth__welcome:hover:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 18px;
+  background: no-repeat center center;
+  margin-left: 5px;
+  background-image: url('../../../img/icons/main_icon-white.png');
+}
+
+@keyframes balllike {
+  0%{
+    opacity: 0;
+    transform: translateY(0);
   }
-  
-  .button__text-intro:hover {
-    color: white;
+
+  30%{
+    opacity: 1;
+    transform: translateY(-30px);
   }
-  
-  .button__text-intro:after {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    width: 24px;
-    height: 18px;
-    background: no-repeat center center;
-    margin-left: 5px;
-    background-image: url('../../../img/icons/main_icon.png');
+
+  50%, 100%{
+    transform: translateY(0px);
   }
-  
-  .button__text-intro:hover:after {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    width: 24px;
-    height: 18px;
-    background: no-repeat center center;
-    margin-left: 5px;
-    background-image: url('../../../img/icons/main_icon-white.png');
+
+  80%{
+    transform: translateY(-15px);
   }
+}
