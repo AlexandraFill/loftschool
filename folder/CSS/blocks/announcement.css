@@ -7,7 +7,7 @@
     width: 100%;
 }
 .announcement__container {
-    background-color: #4b73b5;
+    background: url('../../../img/exclamations.png') center center #4b73b5;
     max-width: 100%;
     display: flex;
     align-items: center;

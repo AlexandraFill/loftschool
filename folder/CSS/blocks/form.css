@@ -17,6 +17,12 @@
   margin-bottom: 18px;
   justify-content: space-between;
 }
+
+.form__row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
   
 .form__block-title, .form__text {
   font-size: 14px;
@@ -51,12 +57,117 @@
   height: 90px;
 }
 
-.radios {
+.form__question-btn {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.form__question-radio {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+}
+
+.form__question-radio:checked+.form__question-visible {
+  border-color: #1c5bc3;
+}
+
+.form__question-radio:checked+.form__question-visible:after {
+  width: 8px;
+  height: 8px;
+}
+
+.form__question-radio:checked+.form__question-visible+.form__question-name {
+  color: #1c5bc3;
+}
+
+.form__question-visible,
+.form__question-name {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.form__question-visible {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #cbcbcb;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  transition: .3s;
+  background: #fdfdfd;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fdfdfd 0%, #ededed 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#ededed', GradientType=0);
+  /* IE6-9 */
+}
+
+.form__question-visible:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1c5bc3;
+  transition: .3s;
+}
+
+.form__question-name {
+  margin-left: 5px;
+  transition: .3s;
+}
+
+
+.radio-section {
   display: flex;
 }
 
-.form__label{
-  margin-right: 20px;
+.radio {
+  margin-right: 10px;
+}
+
+.radio__elem {
+  display: none;
+}
+
+.radio__elem:checked ~ .radio__apperance {
+  background: blue;
+}
+
+.radio__elem:checked ~ .radio__apperance:before {
+  width: 8px;
+  height: 8px;
+}
+
+.radio__apperance {
+  width: 50px;
+  height: 50px;
+  background: red;
+  position: relative;
+}
+
+.radio__apperance:before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 50%;
+  transition: .3s;
 }
 
 .form__buttons {
@@ -64,9 +175,9 @@
   justify-content: center;
   background: #4b73b5;
   border: none;
-  width: 150px;
   box-sizing: border-box;
   border-radius: 5px;
+  height: 47px;
 }
 
 .form__buttons:hover {
@@ -74,7 +185,7 @@
 }
 
 .button__text {
-  color: white;
+  color: #ffffff;
   font-size: 12px;
   letter-spacing: 2.4px;
   font-weight: bold;
@@ -107,3 +218,5 @@
   margin-left: 5px;
   background-image: url('../../../img/icons/main_icon.png');
 }
+
+

@@ -16,7 +16,18 @@
                         </a>
                         <address class="contacts">
                             <a href="tel:+78000039210" class="contacts__phone"> 8 (800) 00-392-10</a>
-                            <a href="#" class="contacts__schedule a"><div>График работы</div></a>
+                            <div class="schedule">
+                                <div class="dropdown">
+                                    <a href="#" class="contacts__schedule a">График работы</a>
+                                    <div class="triangle"></div>
+                                    <div class="dropdown__menu">
+                                        <ul class="dropdown__list">
+                                            <li class="dropdown__item-1">пн-вс: 09:00-20:00</li>
+                                            <li class="dropdown__item-2">обед: 14:00-14:30</li>
+                                        </ul>
+                                    </div>
+                                </div>    
+                            </div>
                         </address>
                     </div>
                 </header>
@@ -232,27 +243,31 @@
                                             </label>
                                         </div>
                                         <div class="form__row">
-                                          <div class="form__question">
-                                            <div class="form__block-title">Отображать фото в отзыве?</div>
-                                            <div class="radios">
-                                                <label class="form__label">
-                                                    <input name="showphoto" class="form__radio" type="radio">
-                                                    <span class="form__custom"></span>
-                                                    <span class="form__text">Да</span>
-                                                </label>
-                                                <label class="form__label">
-                                                    <input name="showphoto" class="form__radio" type="radio">
-                                                    <span class="form__custom"></span>
-                                                    <span class="form__text">Нет</span>
-                                                </label>
-                                            </div>
-                                            
-                                          </div>
-                                          <div class="form__buttons">
-                                            <button type="submit">
-                                              <div class="button__text button__text--icon"> Отправить</div>
-                                            </button>
-                                          </div>
+                                          
+                                            <label class="form__block">
+                                                <div class="form__question">
+                                                    <div class="form__block-title">Отображать фото в отзыве?</div>
+                                                    <div class="form__question-btns">
+                                                        <label class="form__question-btn">
+                                                            <input class="form__question-radio" name="question" type="radio">
+                                                            <div class="form__question-visible"></div>
+                                                            <div class="form__question-name">Да</div>
+                                                        </label>
+                                                        <label class="form__question-btn">
+                                                            <input class="form__question-radio" name="question" type="radio">
+                                                            <div class="form__question-visible"></div>
+                                                            <div class="form__question-name">Нет</div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                            <label class="form__block">
+                                                <div class="form__buttons">
+                                                    <button type="submit">
+                                                    <div class="button__text button__text--icon"> Отправить</div>
+                                                    </button>
+                                                </div>
+                                            </label>
                                         </div>
                                       </form>
                                     </div>

@@ -12,12 +12,6 @@
     width: 72%;
   }
 
-  .information__preview-pic {
-    display: block;
-    max-width: 100%;
-    margin-bottom: 40px;
-  }
-  
   .section__title {
     font-family: Roboto;
     font-size: 49px;
@@ -28,4 +22,24 @@
     text-align: left;
     color: #221f1f;
     margin-bottom: 40px;
+  }
+
+  .about {
+    margin-bottom: 10px;
+  }
+  
+  .about__plane {
+    background: url("../../../img/plane.png") 0 center no-repeat/contain;
+    height: 300px;
+    width: 2000px;
+    position: absolute;
+  }
+  
+  .about__pic-img {
+    display: block;
+  }
+  
+  .about__pic {
+    position: relative;
+    height: 300px;
   }
