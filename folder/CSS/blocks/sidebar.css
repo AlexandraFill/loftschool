@@ -35,6 +35,7 @@
 
 .menu__text:hover {
   color: #000;
+  transition: 0.5s ease;
 }
 
 .menu__text--icon--main:before {
@@ -43,10 +44,12 @@
 
 .menu__text--icon--main:hover:before {
   background-image: url('../../../img/icons/main_icon-hover.png'); 
+  transition: 0.5s ease;
 }
 
 .menu__text--icon--feed:hover:before {
   background-image: url('../../../img/icons/feed_icon-hover.png'); 
+  transition: 0.5s ease;
 }
 
 .menu__text--icon--feed:before {
@@ -55,6 +58,7 @@
 
 .menu__text--icon--team:hover:before {
   background-image: url('../../../img/icons/team_icon-hover.png'); 
+  transition: 0.5s ease;
 }
 
 .menu__text--icon--team:before {

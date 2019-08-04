@@ -11,6 +11,7 @@
 
 .member__avatar-elem:hover {
     opacity: .5;
+    transition: 0.4s ease;
 }
 
 .member__avatar-elem {
@@ -38,6 +39,7 @@
 
 .member__avatar-text:hover {
     opacity: 0;
+    transition: 0.4s ease;
 }
 
 .members__list {

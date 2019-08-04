@@ -5,8 +5,10 @@
 }
 
 .dropdown:hover .dropdown__menu {
+    top: 20px;
     right: 0;
     opacity: 1;
+    transition: opacity 0.7s ease;
 }
 
 .dropdown:hover .contacts__schedule {
@@ -16,6 +18,7 @@
 
 .dropdown:hover .triangle {
     opacity: 1;
+    transition: opacity 0.7s ease;
 }
 
 .dropdown__menu {
@@ -30,7 +33,7 @@
     top: 100%;
     margin-top: 20px;
     opacity: 0;
-    right: -9999px;
+    top: -9999px;
 }
 
 .dropdown__list {

@@ -127,7 +127,6 @@
   transition: .3s;
 }
 
-
 .radio-section {
   display: flex;
 }
@@ -182,6 +181,7 @@
 
 .form__buttons:hover {
   background: white;
+  transition: 0.7s ease;
 }
 
 .button__text {
@@ -195,6 +195,7 @@
 
 .button__text:hover {
   color: #1c5bc3;
+  transition: 0.5s ease;
 }
 
 .button__text:after {
@@ -217,6 +218,7 @@
   background: no-repeat center center;
   margin-left: 5px;
   background-image: url('../../../img/icons/main_icon.png');
+  transition: 0.5s ease;
 }
 
 

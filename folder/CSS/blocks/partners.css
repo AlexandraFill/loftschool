@@ -17,4 +17,5 @@
 
 .partner:hover {
     filter: grayscale(0);
+    transition: 0.4s ease;
 }

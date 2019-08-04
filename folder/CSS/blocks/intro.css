@@ -33,6 +33,7 @@
 
 .welcome__btn:hover {
   background-color: #1c5bc3;
+  transition: background 0.4s ease;
 }
 
 .auth__welcome {
@@ -47,6 +48,7 @@
 
 .auth__welcome:hover {
   color: white;
+  transition: background 0.4s ease;
 }
 
 .auth__welcome:after {
